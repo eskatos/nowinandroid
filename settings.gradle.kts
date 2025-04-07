@@ -29,6 +29,11 @@ pluginManagement {
     }
 }
 
+plugins {
+    id("com.gradle.develocity").version("3.19.2")
+    id("io.github.gradle.gradle-enterprise-conventions-plugin").version("0.10.2")
+}
+
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
