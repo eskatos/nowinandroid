@@ -34,6 +34,15 @@ plugins {
     id("io.github.gradle.gradle-enterprise-conventions-plugin").version("0.10.2")
 }
 
+develocity {
+    buildScan {
+        obfuscation {
+            hostname { "HOSTNAME" }
+            ipAddresses { listOf("127.0.0.1") }
+        }
+    }
+}
+
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
